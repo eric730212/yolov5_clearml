@@ -12,7 +12,10 @@ spec.loader.exec_module(train_module)
 
 train = train_module.train
 
-task = Task.init(project_name="coverDataset", task_name="remote-test")
+# task = Task.init(project_name="coverDataset", task_name="remote-test")
+task = Task.create(project_name="coverDataset", task_name="remote-test",
+                   repo="git@github.com:eric730212/yolov5_clearml.git", branch="clearml")
+
 # task.set_base_docker("ultralytics/yolov5:latest")
 
 task.execute_remotely(queue_name="god")
