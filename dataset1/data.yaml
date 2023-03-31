@@ -1,0 +1,14 @@
+path: ''
+train: dataset1/train/images
+val: dataset1/valid/images
+test: dataset1/test/images
+
+nc: 1
+names: ['cover']
+
+roboflow:
+  workspace: iamgod0212
+  project: cover-an9kl
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/iamgod0212/cover-an9kl/dataset/1
